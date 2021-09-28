@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px 0px;
+    Font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px auto;
+    max-width: 900px;
+    text-align: center;
+    padding: 0px 30px;
+}
+h1{
+    margin: 15px 0px;
+}
+header h1:nth-child(1){
+    color: hsl(234, 12%, 34%);
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: hsl(229, 6%, 66%);
+}
+header>p{
+    margin-top: 15px;
+    font-family:Georgia -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.row_container{
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    align-items: center;
+}
+.column{
+    padding: 10px;
+    flex: 1;
+}
+
+.item{
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 5px 10px 34px hsl(229, 6%, 66%);
+    padding: 30px;
+    margin: 0px 0px;
+}
+h2{
+    padding: 10px 0px;
+}
+img{
+    max-width: 100%;
+    float: right;
+    margin-top: 70px;
+}
+.i1{border-top: 5px solid hsl(180, 62%, 55%);}
+.i2{border-top: 5px solid  hsl(0, 78%, 62%); margin-bottom: 20px;}
+.i3{border-top: 5px solid hsl(34, 97%, 64%);}
+.i4{border-top: 5px solid hsl(212, 86%, 64%);}
+@media only screen and (min-width: 1000px){
+    .row_container{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width:999px){
+    .row_container{
+        max-width: 600px;
+    }
+
+    img{
+        margin: 20px;
+        width: 20%;
+    }
+    
+}
+@media only screen and (max-width:399px){
+    h1{
+        font-size: 1.5rem;
+    }
+    
+}
+.item:hover{
+    font-size: 16px;
+    border-top:5px solid black;
+}
